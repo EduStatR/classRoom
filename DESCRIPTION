@@ -1,0 +1,10 @@
+Package: classRoom
+Type: Package
+Title: Pacote classRoom (Portugues)
+Version: 1.0.0
+Author: Adriana Dias, Denismar Alves Nogueira, Flavio Bittencourt, Natalia da Silva Martins Fonseca
+Maintainer: Flavio Bittencourt <flavio.bittencourt@unifal-mg.edu.br>
+Description: classRoom: um pacote R para apoio ao ensino e a aprendizagem de estatistica
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
