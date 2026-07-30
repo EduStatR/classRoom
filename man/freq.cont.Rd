@@ -8,7 +8,6 @@
 \usage{
 freq.cont(x,
           graf = FALSE,
-          polgfreq = FALSE,
           xlab = "Título do eixo-x",
           ylab = "Titulo do eixo-y",
           col = "lightyellow")
@@ -16,14 +15,13 @@ freq.cont(x,
 \arguments{
   \item{x}{nome da variavel ou da coluna do banco de dados que identifica a variavel.}
   \item{graf}{se TRUE, o histograma com as frequencias absolutas sera apresentado, o \emph{default} e FALSE.}
-  \item{polgfreq}{se TRUE, o polígono de frequencias absolutas sera apresentado, o \emph{default} e FALSE.}
   \item{xlab}{nomeia a variavel apresentada no eixo horizontal.}
  \item{ylab}{nomeia a variavel apresentada no eixo vertital.}
  \item{col}{define a cor das colunas do histograma, o \emph{default} e lightyellow.}
 }
-\details{Esta funcao confecciona a tabela de distribuicao de frequencias de uma variavel quantitativa continua e apresenta o histograma e o poligono de frequencias.}
+\details{Esta funcao confecciona a tabela de distribuicao de frequencias de uma variavel quantitativa continua e apresenta o histograma.}
 \value{
-Sao retornados a tabela de distribuicao de frequencias contendo as categorias da variavel, as frequencias absolutas (fi), as frequencias relativas (fr), as frequencias percentuais (fp), as frequencias acumuladas absolutas (FA) e as frequencias acumuladas acima (FAp) e o histograma e o poligono de frequencias quando solicitado.
+Sao retornados a tabela de distribuicao de frequencias contendo as categorias (classes) formadas por intervalos de valores da variavel, as frequencias absolutas (fi), as frequencias relativas (fr), as frequencias percentuais (fp), as frequencias acumuladas absolutas (FA) e as frequencias acumuladas acima (FAp) e o histograma quando solicitado.
 }
 
 \references{
@@ -50,7 +48,7 @@ Natalia da Silva Martins Fonseca,
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+\code{\link{graf.hist}}
 }
 \examples{
 data(banco)
@@ -58,7 +56,7 @@ attach(banco)
 
 freq.cont(x=alturaMM,
           graf = TRUE,
-          polgfreq = TRUE, xlab = "Altura dos estudantes (m)",
+          xlab = "Altura dos estudantes (m)",
           ylab ="Quantidade de estudantes",
           col = "lightyellow")
 }

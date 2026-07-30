@@ -50,7 +50,7 @@ Natalia da Silva Martins Fonseca,
 data(banco4)
 attach(banco4)
 
-graf.diag(x,y,xlab="Ano",ylab="Taxa de fatalidade")
+graf.diag(X,Y,xlab="Ano",ylab="Taxa de fatalidade")
 graf.diag(lnX,Y,xlab="Logaritmo do ano",ylab="Taxa de fatalidade")
 
 }

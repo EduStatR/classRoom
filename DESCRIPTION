@@ -4,7 +4,9 @@ Title: Pacote classRoom (Portugues)
 Version: 1.0.0
 Author: Adriana Dias, Denismar Alves Nogueira, Flavio Bittencourt, Natalia da Silva Martins Fonseca
 Maintainer: Flavio Bittencourt <flavio.bittencourt@unifal-mg.edu.br>
-Description: classRoom: um pacote R para apoio ao ensino e a aprendizagem de estatistica
-License: What license is it under?
+Description: O classRoom e um pacote desenvolvido para apoiar o ensino e a aprendizagem de Estatistica Basica. O pacote reune funcoes didaticas para organizacao e descricao de dados, construcao de graficos, distribuicoes de probabilidade, intervalos de confianca, testes de hipoteses, correlacao, regressao linear e analise de variancia. Seu objetivo e auxiliar professores e estudantes a concentrarem seus esforcos na interpretacao dos resultados e na compreensao dos conceitos estatisticos, reduzindo a necessidade de programacao.
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/EduStatR/classRoom, https://pensaracademico.unifacig.edu.br/index.php/pensaracademico/article/view/4610
+BugReports: https://github.com/EduStatR/classRoom/issues

@@ -1,28 +1,34 @@
 \name{graf.hist}
 \alias{graf.hist}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Histograma
+\title{Histograma e outros
 }
-\description{Confecciona a tabela de distribuicao de frequencias e o histograma
+\description{Confecciona a tabela de distribuicao de frequencias com variadas frequencias e graficos
 }
 \usage{
-graf.hist(x, arred_c=2, arred_LI1=2, graf=FALSE, polgfreq = FALSE,col= "yellow",
-                      xlab = "Título do eixo-x", ylab = "Titulo do eixo-y")
+graf.hist(x,
+          arred_c=2,
+          arred_LI1=2,
+          grafs,
+          col= "yellow",
+          xlab= "Título do eixo-x",
+          ylab= "Titulo do eixo-y")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{nome da variavel ou da coluna do banco de dados que identifica a variavel.}
-  \item{arred_c}{Define o numero de casas decimais para o intervalo de classe.}
-    \item{arred_LI1}{Define o numero de casas decimais para o limite inferior da primeira classe.}
-  \item{graf}{se TRUE, o histograma com as frequencias absolutas sera apresentado, o \emph{default} e FALSE.}
-  \item{polgfreq}{se TRUE, o polígono de frequencias absolutas sera apresentado, o \emph{default} e FALSE.}
+  \item{arred_c}{define o numero de casas decimais para o intervalo de classe.}
+  \item{arred_LI1}{define o numero de casas decimais para o limite inferior da primeira classe.}
+  \item{grafs}{define o grafico a confeccionar. Use \bold{1} para \bold{histograma}, \bold{2} para \bold{poligono de
+  frequencias}, \bold{3} para \bold{histograma e poligono de frequencias}, \bold{4} para \bold{ogiva crescente} e \bold{5} para \bold{ogiva decrescente}.}
+  \item{col}{define a cor das colunas do histograma, o \emph{default} e yellow.}
   \item{xlab}{nomeia a variavel apresentada no eixo horizontal.}
- \item{ylab}{nomeia a variavel apresentada no eixo vertital.}
- \item{col}{define a cor das colunas do histograma, o \emph{default} e lightyellow.}
-}
-\details{Esta funcao confecciona a tabela de distribuicao de frequencias de uma variavel quantitativa continua e apresenta o histograma e o poligono de frequencias.}
+  \item{ylab}{nomeia a variavel apresentada no eixo vertital.}
+ }
+\details{Esta funcao confecciona a tabela de distribuicao de frequencias
+de uma variavel quantitativa continua e apresenta os graficos da tabela.}
 \value{
-Sao retornados a tabela de distribuicao de frequencias contendo as categorias da variavel, as frequencias absolutas (fi), as frequencias relativas (fr), as frequencias percentuais (fp), as frequencias acumuladas absolutas (FA) e as frequencias acumuladas acima (FAp) e o histograma e o poligono de frequencias quando solicitado.
+Sao retornados a tabela de distribuicao de frequencias contendo os intervalos (classes) da variavel, as variadas frequencias e os graficos da tabela.
 }
 
 \references{
@@ -49,12 +55,15 @@ Natalia da Silva Martins Fonseca,
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+\code{\link{freq.cont}}
 }
 \examples{
 data(banco)
 attach(banco)
-graf.hist(x=alturaMM, arred_c=3, arred_LI1=3, graf=TRUE, polgfreq = TRUE,col= "yellow",
-          xlab="Altura dos estudantes (m)",ylab="Quantidade de estudantes")
-
+graf.hist(x=alturaMM,
+          grafs = 3,    #definir 1, 2, 3, 4 ou 5
+          arred_c=2, arred_LI1=2,
+          col = "lightyellow",
+          xlab = "Altura dos estudantes (m)",
+          ylab ="Quantidade de estudantes")
 }

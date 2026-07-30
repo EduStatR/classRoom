@@ -1,0 +1,28 @@
+citHeader("Para citar o pacote classRoom em publicacoes, por gentileza, use:")
+
+citEntry(
+  entry    = "Article",
+  title    = "classRoom: um pacote R para apoio ao ensino e a aprendizagem de Estatistica",
+  author   = personList(
+    person("Flávio", "Bittencourt"),
+    person("Adriana", "Dias"),
+    person("Denismar Alves", "Nogueira"),
+    person("Natália da Silva Martins", "Fonseca")
+  ),
+  journal  = "Pensar Academico",
+  year     = "2026",
+  volume   = "23",
+  number   = "5",
+  pages    = "659-673",
+
+  url      = "https://pensaracademico.unifacig.edu.br/index.php/pensaracademico/article/view/4610",
+  textVersion =
+    paste(
+      "Bittencourt, F.; Dias, A.; Nogueira, D. A.; Fonseca, N. S. M.",
+      "classRoom: um pacote R para apoio ao ensino e a aprendizagem de Estatistica.",
+      "Pensar Academico,",
+      "Manhuacu,",
+      "v.23, n.5, p.659-673,",
+      "2026."
+    )
+)

@@ -1,4 +1,4 @@
-freq.cont <- function (x, graf = TRUE, polgfreq = FALSE, xlab = "Título do eixo-x", ylab = "Titulo do eixo-y",
+freq.cont <- function (x, graf = FALSE, xlab = "Título do eixo-x", ylab = "Titulo do eixo-y",
                         col = "lightyellow")
 {
   if(!graf) graphics.off()
@@ -63,12 +63,18 @@ freq.cont <- function (x, graf = TRUE, polgfreq = FALSE, xlab = "Título do eixo
     for (i in 1:length(freq)) {
       rect(limites[i], 0, limites[i + 1], freq[i], col = col, border = "black")
     }
-    if (polgfreq) {
-      lines(mids, freq, type = "o", col = "red", lwd = 2, pch = 16)
-    }
+
   }
   out <- list(Tabela = df_tabela)
   invisible(out)
+  cat("----------------------------------------------\n")
+cat("LI e LS - limite inferior e superior da classe\n")
+  cat("PM - ponto medio da classe\n")
+  cat("fi - frequencia absoluta da classe\n")
+  cat("fr - frequencia relativa da classe\n")
+  cat("fp - frequencia percentual da classe\n")
+  cat("FA - frequencia acumulada abaixo\n")
+  cat("FAp - frequencia percentual acumulada abaixo\n")
   cat("----------------------------------------------\n")
   cat("Outras informacoes:\n")
   cat("Numero de classes (k):", k,"\n")
@@ -76,7 +82,6 @@ freq.cont <- function (x, graf = TRUE, polgfreq = FALSE, xlab = "Título do eixo
     cat("----------------------------------------------\n")
 
 }
-
 
 
 
