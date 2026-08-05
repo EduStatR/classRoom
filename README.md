@@ -16,7 +16,8 @@ No **R**, execute os comandos abaixo.
 Caso ainda não o tenha instalado:
 
 ```r
-install.packages("remotes")
+install.packages("remotes",
+                 repos = "https://cloud.r-project.org")
 ```
 
 ### 2️⃣ Instale o pacote **classRoom** diretamente do GitHub
