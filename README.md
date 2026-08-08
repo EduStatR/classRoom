@@ -7,7 +7,7 @@ Aprenda Estatística de forma simples, prática e interativa utilizando o **clas
 
 O pacote reúne funções didáticas para análise de dados, construção de gráficos e realização de testes estatísticos, permitindo que o usuário concentre seus esforços na compreensão dos conceitos e na interpretação dos resultados, em vez de se preocupar com detalhes de programação.
 
-Há muitas funções, como:
+As funções disponíveis são apresentadas no Quadro 1:
 
 ### Quadro 1 – Assuntos da disciplina Estatística Básica e tarefas disponíveis no pacote *classRoom*
 
