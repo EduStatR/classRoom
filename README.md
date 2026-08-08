@@ -76,7 +76,7 @@ help(graf.box)
 
 ## 📖 Como citar o classRoom
 
-Se você utilizar o pacote **classRoom** em trabalhos científicos, cite:
+Se você utilizar o pacote **classRoom**, cite:
 
 Bittencourt, F.; Dias, A.; Nogueira, D. A.; Fonseca, N. S. M. **classRoom: um pacote R para apoio ao ensino e a aprendizagem de Estatistica.**      Pensar Acadêmico, v.23, n.5, p.659-673, 2025. Disponível em: https://pensaracademico.unifacig.edu.br/index.php/pensaracademico/article/view/4610
 
