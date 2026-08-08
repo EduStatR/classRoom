@@ -86,4 +86,4 @@ Bittencourt, F.; Dias, A.; Nogueira, D. A.; Fonseca, N. S. M. **classRoom: um pa
 
 O **classRoom** foi desenvolvido para apoiar o ensino e a aprendizagem de Estatística, oferecendo funções simples e intuitivas para que professores e estudantes possam dedicar mais tempo à análise e interpretação dos resultados e menos tempo à programação.
 
-Bom estudo!
+Bom proveito!
