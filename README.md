@@ -18,10 +18,10 @@ As funções disponíveis são apresentadas no Quadro 1:
 | **Distribuição de probabilidades** | Obtenção de quantis das distribuições normal, *t* de Student, qui-quadrado e *F*. Cálculo de probabilidades para diferentes situações utilizando as distribuições binomial, Poisson e normal, com visualização gráfica. |
 | **Teoria da estimação** | Determinação do tamanho amostral para intervalos de confiança para média e proporção. Obtenção de intervalos de confiança para média(s), variância (desvio-padrão) e proporção. |
 | **Teoria da decisão** | Execução de testes de hipóteses para média(s), variância(s) e proporção; testes de independência e de proporção em tabelas de contingência (testes qui-quadrado e exato de Fisher); e testes para comparação de mais de duas médias (ANOVA *one-way*). Todos os testes podem ser realizados a partir de um banco de dados ou por meio de inserção manual. Em todos os testes, os resultados numéricos e o gráfico contendo a estatística de teste, o quantil da distribuição de probabilidade e a área correspondente ao valor-*p* podem ser visualizados. |
-| **Correlação e regressão linear** | Cálculo da correlação linear e realização de teste de hipóteses. Cálculo das estimativas dos parâmetros do modelo de regressão linear e realização de testes de hipóteses. Em ambos os casos, é possível gerar ou não o gráfico e exibir as estatísticas. |
+| **Correlação e regressão linear** | Cálculo do coeficiente de correlação linear e realização de teste de hipóteses. Cálculo das estimativas dos parâmetros do modelo de regressão linear e realização de testes de hipóteses. Em ambos os casos, é possível gerar ou não o gráfico e exibir as estatísticas. |
 | **Outros assuntos** | Cálculo da razão de chances (*odds ratio*) e do risco relativo, com intervalo de confiança. |
 
-**Fonte:** Bittencourt et. al (2025) - modificada.
+**Fonte:** Bittencourt et al. (2025) - modificada.
 
 ## 🚀 Instalação
 
