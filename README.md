@@ -15,7 +15,7 @@ As funções disponíveis são apresentadas no Quadro 1:
 |---|---|
 | **Amostragem** | Sorteio de elementos da população em amostragem simples ao acaso e amostragem sistemática, com ou sem o uso de banco de dados. Determinação dos tamanhos amostrais dos estratos em amostragem estratificada uniforme, proporcional e ótima.|
 ||am.ae.ot, am.ae.prop, am.ae.unif, am.as, am.as.dados, am.asa, am.asa.dados|
-|
+
 | **Estatística descritiva** | Tabulação de dados de variáveis discretas e contínuas, com ou sem geração de gráficos. Confecção das principais representações gráficas, incluindo o *boxplot*. Cálculo de medidas de tendência central, posição e dispersão. |
 | **Distribuição de probabilidades** | Obtenção de quantis das distribuições normal, *t* de Student, qui-quadrado e *F*. Cálculo de probabilidades para diferentes situações utilizando as distribuições binomial, Poisson e normal, com visualização gráfica. |
 | **Teoria da estimação** | Determinação do tamanho amostral para intervalos de confiança para média e proporção. Obtenção de intervalos de confiança para média(s), variância (desvio-padrão) e proporção. |
