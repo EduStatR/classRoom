@@ -4,7 +4,7 @@
 Medidas de variabilidade
 }
 \description{
-Calcula a variancia, o desvio padrao, o coeficiente de variacao e o intervalo interquartilico (IQR) de um conjunto de dados
+Calcula a variancia, o desvio padrao, o coeficiente de variacao, a amplitude total e o intervalo interquartilico (IQR) de um conjunto de dados
 }
 \usage{
 med.var(x)

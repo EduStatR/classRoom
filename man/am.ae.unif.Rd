@@ -38,7 +38,9 @@ Natalia da Silva Martins Fonseca,
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+\code{\link{am.ae.ot}}, \code{\link{am.ae.prop}}, \code{\link{am.as.dados}},
+\code{\link{am.ae.prop}}, \code{\link{am.as}}, \code{\link{am.asa.dados}},
+ \code{\link{am.asa}}
 }
 \examples{
 #selecionar uma amostra de tamanho n=50 de uma populacao com k=5 estratos

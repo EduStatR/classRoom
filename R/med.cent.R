@@ -34,7 +34,6 @@ med.cent<-function(x){
     }
   }
 
-
   cat("Resultado\n")
   cat("------------------\n")
   cat("Media = ",media,"\n")

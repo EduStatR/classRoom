@@ -110,17 +110,6 @@ graf.pict(x=anos,
           label=TRUE)
 #=================================================
 
-graf.pict(x=c("A","B","C","D","E","F","G"),
-          y=c(0.5,1.5,2.3,3,4,4.5,3.5),
-          figura="classR.png",
-          valor=1,
-          xlab = "Pacote classRoom",
-          ylab = "Logotipo",
-          legenda = TRUE,
-          legend.lab = NULL,
-          label=TRUE)
-#=================================================
-
 graf.pict(x=c("Coracão","Cérebro","Pulmão","Estômago","Fígado","Rim"),
           y=c(40,23,14,8,19,32),
           #figura=rep("R.png",6),

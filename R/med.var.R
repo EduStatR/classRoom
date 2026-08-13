@@ -10,12 +10,12 @@ med.var<-function(x){
 
   cat("Resultado\n")
   cat("------------------\n")
-  cat("Variancia = ",variancia,"\n")
-  cat("Desvio padrao = ",desvio_padrao,"\n")
-  if(is.numeric(x)){cat("Coeficiente de variacao = ",coef_var,"%\n")}
-  else{cat("Coeficiente de variacao = ",coef_var,"\n")}
-  cat("A = ",A,"\n")
-  cat("IQR = ",IQR,"\n")
+  cat("Variancia:  s\u00B2 = ",variancia,"\n")
+  cat("Desvio padrao: s = ",desvio_padrao,"\n")
+  if(is.numeric(x)){cat("Coeficiente de variacao: cv = ",coef_var,"%\n")}
+  else{cat("Coeficiente de variacao: cv = ",coef_var,"\n")}
+  cat("Amplitude: A = ",A,"\n")
+  cat("Intervalo interquartilico: IQR = ",IQR,"\n")
   }
 
 

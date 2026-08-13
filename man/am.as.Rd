@@ -40,7 +40,9 @@ Natalia da Silva Martins Fonseca,
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+\code{\link{am.ae.ot}}, \code{\link{am.ae.prop}}, \code{\link{am.ae.unif}}, \code{\link{am.as.dados}},
+\code{\link{am.ae.prop}}, \code{\link{am.asa.dados}},
+ \code{\link{am.asa}}
 }
 \examples{
 #sortear 10 alunos de uma sala de aula com 30 alunos
