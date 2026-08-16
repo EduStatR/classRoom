@@ -76,9 +76,6 @@ library(classRoom)
 
 Depois de carregar o pacote, você pode consultar todas as funções disponíveis:
 
-
-remotes::install_github("EduStatR/classRoom")
-
 ```r
 help(package = "classRoom")
 ```
@@ -106,18 +103,6 @@ Como interpretar os resultados no contexto do problema?
 
 Assim, o pacote busca contribuir não apenas para a execução dos procedimentos estatísticos, mas também para o desenvolvimento da literacia estatística, do raciocínio estatístico e do pensamento estatístico.
 
-
-Como citar o classRoom
-
-Se você utilizar o pacote classRoom em trabalhos acadêmicos, artigos, monografias, dissertações ou outras publicações, recomendamos citar o artigo:
-
-BITTENCOURT, F.; DIAS, A.; NOGUEIRA, D. A.; FONSECA, N. S. M. classRoom: um pacote R para apoio ao ensino e à aprendizagem de Estatística. Pensar Acadêmico, v. 23, n. 5, p. 659–673, 2025.
-
-Disponível em:
-
-https://pensaracademico.unifacig.edu.br/index.php/pensaracademico/article/view/4610
-
-
 👥 Autores
 
 Adriana Dias
@@ -129,13 +114,6 @@ Natália da Silva Martins Fonseca
 
 Este pacote é distribuído sob a licença GPL-3.
 
-📦 Repositório
-
-O código-fonte, a documentação e as versões do pacote estão disponíveis no GitHub:
-
-EduStatR/classRoom
-
-https://github.com/EduStatR/classRoom
 
 Faça bom uso!
 Os autores.
