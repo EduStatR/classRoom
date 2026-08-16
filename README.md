@@ -103,18 +103,27 @@ Como interpretar os resultados no contexto do problema?
 
 Assim, o pacote busca contribuir não apenas para a execução dos procedimentos estatísticos, mas também para o desenvolvimento da literacia estatística, do raciocínio estatístico e do pensamento estatístico.
 
+---
+
 👥 Autores
 
 Adriana Dias
+
 Denismar Alves Nogueira
+
 Flavio Bittencourt
+
 Natália da Silva Martins Fonseca
+
+---
 
 📄 Licença
 
 Este pacote é distribuído sob a licença GPL-3.
 
 
+
 Faça bom uso!
+
 Os autores.
 
