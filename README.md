@@ -36,9 +36,9 @@ As funções do pacote estão organizadas de acordo com os principais assuntos d
 
 A instalação do **classRoom** é simples e pode ser realizada diretamente a partir do GitHub.
 
-> **Importante:** os comandos abaixo devem ser executados no **R** (ou no **RStudio**).
+> **Importante:** os comandos abaixo devem ser executados no **R** ou no **RStudio**.
 
-## 1. Instale o pacote `remotes`
+### 1. Instale o pacote `remotes`
 
 Esta etapa é necessária apenas se o pacote `remotes` ainda não estiver instalado no seu computador.
 
@@ -49,16 +49,17 @@ install.packages("remotes",
                  repos = "https://cloud.r-project.org")
 ```
 
-## 2. Instale o `classRoom`
+### 2. Instale o `classRoom`
 
 Depois de instalar o `remotes`, execute:
 
 ```r
 remotes::install_github("EduStatR/classRoom")
 ```
-O R instalará o pacote classRoom e suas dependências.
 
-## 3. Carregue o pacote
+O R instalará o pacote **classRoom** e as dependências necessárias.
+
+### 3. Carregue o pacote
 
 Após a instalação, carregue o pacote:
 
@@ -66,64 +67,76 @@ Após a instalação, carregue o pacote:
 library(classRoom)
 ```
 
-> Também é possível utilizar:
->
-> ```r
-> require(classRoom)
-> ```
+Pronto! O **classRoom** está disponível para utilização.
 
-## 5. Como começar?
+---
+
+## 🧭 Como começar?
 
 Depois de carregar o pacote, você pode consultar todas as funções disponíveis:
 
 ```r
 help(package = "classRoom")
 ```
+
 A documentação de cada função apresenta sua finalidade, argumentos, detalhes e exemplos de utilização.
+
+Para consultar uma função específica, utilize, por exemplo:
+
+```r
+?graf.box
+```
+
+ou:
+
+```r
+help(graf.box)
+```
+
+---
 
 ## 📖 Como citar o classRoom
 
-Se você utilizar o pacote **classRoom**, cite:
+Se você utilizar o pacote **classRoom** em trabalhos acadêmicos, artigos, monografias, dissertações ou outras publicações, recomendamos citar:
 
-Bittencourt, F.; Dias, A.; Nogueira, D. A.; Fonseca, N. S. M. **classRoom: um pacote R para apoio ao ensino e a aprendizagem de Estatistica.**      Pensar Acadêmico, v.23, n.5, p.659-673, 2025. Disponível em: https://pensaracademico.unifacig.edu.br/index.php/pensaracademico/article/view/4610
+**BITTENCOURT, F.; DIAS, A.; NOGUEIRA, D. A.; FONSECA, N. S. M.** *classRoom: um pacote R para apoio ao ensino e à aprendizagem de Estatística*. Pensar Acadêmico, v. 23, n. 5, p. 659–673, 2025.
+
+Disponível em:  
+https://pensaracademico.unifacig.edu.br/index.php/pensaracademico/article/view/4610
 
 ---
 
-## Objetivo
+## 🎯 Objetivo
 
-O classRoom foi desenvolvido para que professores e estudantes possam utilizar o R como ferramenta de apoio ao ensino da Estatística, sem que a programação seja o foco principal da atividade.
+O **classRoom** foi desenvolvido para que professores e estudantes possam utilizar o R como ferramenta de apoio ao ensino da Estatística, sem que a programação seja o foco principal da atividade.
 
 As funções procuram tornar a realização das tarefas estatísticas mais simples, permitindo que o usuário dedique mais atenção a questões como:
 
-Qual método estatístico deve ser utilizado?
-Quais são as hipóteses envolvidas?
-Quais resultados são importantes?
-O que os resultados significam?
-Como interpretar os resultados no contexto do problema?
+- **Qual método estatístico deve ser utilizado?**
+- **Quais são as hipóteses envolvidas?**
+- **Quais resultados são importantes?**
+- **O que os resultados significam?**
+- **Como interpretar os resultados no contexto do problema?**
 
-Assim, o pacote busca contribuir não apenas para a execução dos procedimentos estatísticos, mas também para o desenvolvimento da literacia estatística, do raciocínio estatístico e do pensamento estatístico.
-
----
-
-👥 Autores
-
-Adriana Dias
-
-Denismar Alves Nogueira
-
-Flavio Bittencourt
-
-Natália da Silva Martins Fonseca
+Assim, o pacote busca contribuir não apenas para a execução dos procedimentos estatísticos, mas também para o desenvolvimento da **literacia estatística, do raciocínio estatístico e do pensamento estatístico**.
 
 ---
 
-📄 Licença
+## 👥 Autores
 
-Este pacote é distribuído sob a licença GPL-3.
+**Adriana Dias**  
+**Denismar Alves Nogueira**  
+**Flavio Bittencourt**  
+**Natália da Silva Martins Fonseca**
 
+---
 
+## 📄 Licença
 
-Faça bom uso!
+Este pacote é distribuído sob a licença **GPL-3**.
 
-Os autores.
+---
 
+**Faça bom uso!** 📊
+
+**Os autores.**
