@@ -81,18 +81,6 @@ help(package = "classRoom")
 
 A documentação de cada função apresenta sua finalidade, argumentos, detalhes e exemplos de utilização.
 
-Para consultar uma função específica, utilize, por exemplo:
-
-```r
-?graf.box
-```
-
-ou:
-
-```r
-help(graf.box)
-```
-
 ---
 
 ## 📖 Como citar o classRoom
