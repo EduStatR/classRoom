@@ -69,6 +69,10 @@ library(classRoom)
 
 Pronto! O **classRoom** está disponível para utilização.
 
+Uma vez instalado o pacote, para usá-lo em outro momento, basta carregá-lo por meio desse mesmo comando.
+
+Não necessita estar *online*.
+
 ---
 
 ## 🧭 Como começar?
