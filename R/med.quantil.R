@@ -1,18 +1,37 @@
-med.quantil<-function(x,p){
-  #if(is.numeric(x)){if(p%in%seq(0,100,0.0001)){
-  if(is.numeric(x)){if(p >= 0 && p <= 100){
-    perc<-quantile(x, probs = c(p/100))
+med.quantil <- function(x, q)
+{
+  # Verificações
+  if(!is.numeric(x))
+  {
     cat("Resultado\n")
-    cat("------------------\n")
-    cat("Valor do quantil: ",p," = ",perc,"\n")}
-    else{cat("Resultado\n")
-      cat("------------------\n")
-      cat("Observe o valor informado do quantil,\n")
-      cat("este nao e um valor valido.")}
+    cat("----------------------\n")
+    cat("Nao e possivel calcular o quantil.\n")
+    cat("----------------------\n")
+    return(invisible(NULL))
   }
-  else{cat("Resultado\n")
-    cat("------------------\n")
-    cat("Nao e possivel calcular o quantil.\n")}
-}
 
+  if(length(q) != 1 || !is.numeric(q) || q < 0 || q > 100)
+  {
+    cat("Resultado\n")
+    cat("----------------------\n")
+    cat("Observe o valor informado do quantil.\n")
+    cat("Este nao e um valor valido.\n")
+    cat("----------------------\n")
+    return(invisible(NULL))
+  }
+
+  # Calculo do quantil
+  perc <- quantile(x, probs = q / 100)
+
+  # Saida
+  cat("\n----------------------\n")
+  cat("Resultado\n")
+  cat("----------------------\n")
+
+  cat("Quantil de",q,"% ( quantil de ordem", q/100,")\n")
+
+  cat("q(",q,"%) =", perc, "\n")
+
+  cat("----------------------\n")
+}
 

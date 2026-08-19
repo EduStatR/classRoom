@@ -4,18 +4,19 @@
 Medida de posicao ou separatriz (quantil)
 }
 \description{
-Calcula o valor de um quantil especificado pelo usuario.
+Calcula o valor de um quantil, que divide um conjunto de dados ou uma distribuicao de probabilidades em partes, de acordo com uma determinada proporcao especificada pelo usuario. Os tipos mais conhecidos sao os percentis, os quartis e os decis.
 }
 \usage{
-med.quantil(x,p)
+med.quantil(x,q)
 }
 \arguments{
   \item{x}{nome da variavel ou da coluna do banco de dados que identifica a variavel}
-  \item{p}{percentual correspondente ao percentil a ser calculado, informado entre 0 e 100. Por exemplo, use \code{p = 25} para o primeiro quartil e \code{p = 50} para a mediana.}
+  \item{q}{percentual correspondente ao quantil a ser calculado,
+  informado entre 0 e 100. Por exemplo, use \code{q = 25} para o primeiro quartil e \code{q = 50} para a mediana.}
 }
 \details{
 Permite obter o valor de um quantil especificado pelo usuário. O argumento \code{p} deve ser informado em porcentagem, variando de 0 a 100.
-A partir do valor de \code{p}, podem ser obtidos percentis, quartis e outras medidas de posição baseadas em quantis.
+A partir do valor de \code{q}, podem ser obtidos percentis, quartis e outras medidas de posição baseadas em quantis.
 
 
 }
@@ -46,23 +47,22 @@ Natalia da Silva Martins Fonseca,
 
 
 \note{
-O argumento \code{p} deve ser informado em porcentagem.
+O argumento \code{q} deve ser informado em porcentagem.
 
-Para obter o percentil 30, informe \eqn{p = 30}.
+Para obter o percentil 30, informe \eqn{q = 30}.
 
-Para obter os quartis, informe \eqn{p = 25} para o primeiro quartil,
-\eqn{p = 50} para o segundo quartil (mediana) e
-\eqn{p = 75} para o terceiro quartil.
+Para obter os quartis, informe \eqn{q = 25} para o primeiro quartil,
+\eqn{q = 50} para o segundo quartil (mediana) e
+\eqn{q = 75} para o terceiro quartil.
 
-Um percentil qualquer pode ser obtido atribuindo a \code{p} o valor desejado.
-Por exemplo, para obter o percentil 2,5, informe \eqn{p = 2.5}.
+Um percentil qualquer pode ser obtido atribuindo a \code{q} o valor desejado.
+Por exemplo, para obter o percentil 2,5, informe \eqn{q = 2.5}.
 }
 
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+\code{\link{med.cent}}, \code{\link{med.var}}
 }
 \examples{
 data(banco)

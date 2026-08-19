@@ -43,7 +43,7 @@ Natalia da Silva Martins Fonseca,
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+\code{\link{med.cent}}, \code{\link{med.quantil}}
 }
 \examples{
 data(banco)

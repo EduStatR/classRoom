@@ -1,54 +1,95 @@
-freq.disc <- function(x, graf = TRUE,
+freq.disc <- function(x, graf = FALSE,
                       xlab = "Titulo do eixo-x",
                       ylab = "Titulo do eixo-y",
-                      col = "darkblue") {
+                      col = "darkblue")
+{
   if(!graf) graphics.off()
 
-  # Conjunto completo de valores observados (discretos)
+  # Conjunto completo de valores observados
   Xi_full <- seq(min(x), max(x))
 
-  # Calcula a tabela de frequências absolutas
+  # Tabela de frequencias absolutas
   d <- table(factor(x, levels = Xi_full))
-  df <- as.data.frame(d)
 
-  # Valores únicos e frequências
-  Xi <- as.numeric(as.character(df$Var1))
-  Fi <- df$Freq
+  # Valores e frequencias
+  Xi <- as.numeric(names(d))
+  Fi <- as.numeric(d)
 
-  # Soma total de observações
+  # Numero total de observacoes
   n <- sum(Fi)
 
-  # Frequências relativas e percentuais
+  # Frequencias relativas e percentuais
   Fri <- Fi / n
   Fpi <- Fri * 100
+
+  # Frequencias acumuladas
   FA <- cumsum(Fi)
   FAPi <- cumsum(Fpi)
 
-  # Criação da tabela final
-  k <- length(Xi)
-  tabela <- matrix(NA, k, 6)
-  row.names(tabela) <- rep("", k)
-  tabela[, 1] <- Xi_full
-  tabela[, 2] <- Fi
-  tabela[, 3] <- round(Fri, 2)
-  tabela[, 4] <- round(Fpi, 2)
-  tabela[, 5] <- FA
-  tabela[, 6] <- round(FAPi, 2)
-  colnames(tabela) <- c("X", "fi", "fr", "fp(%)", "FA", "FAp(%)")
+  # Saida
+  cat("\nDistribuicao de frequencias\n")
+  cat("--------------------------------------------------------\n")
 
-  # Exibe a tabela
-  cat("\n   Distribuição de frequências\n")
-  cat("----------------------------------\n")
-  print(tabela)
-  cat("----------------------------------\n")
+  cat(sprintf("%6s %8s %8s %10s %8s %10s\n",
+              "X", "fi", "fr", "fp(%)", "FA", "FAp(%)"))
 
-  # Gráfico de barras (opcional)
-  if (graf) {
-    lim <- max(Fi) * 1.2  # margem superior para as barras
-    coluna <- barplot(Fi ~ Xi, ylim = c(0, lim),
-                      ylab = ylab, xlab = xlab,
-                      las = 1, col = col)
-    text(coluna, Fi, labels = Fi, pos = 3, cex = 1)
+  cat("--------------------------------------------------------\n")
+
+  for(i in seq_along(Xi))
+  {
+    cat(sprintf("%6g %8d %8.2f %10.2f %8d %10.2f\n",
+                Xi[i],
+                Fi[i],
+                Fri[i],
+                Fpi[i],
+                FA[i],
+                FAPi[i]))
+  }
+
+  cat("--------------------------------------------------------\n")
+
+  # Total
+  cat(sprintf("%6s %8d %8.2f %10.2f %8d %10.2f\n",
+              "Total",
+              sum(Fi),
+              sum(Fri),
+              sum(Fpi),
+              FA[length(FA)],
+              FAPi[length(FAPi)]))
+
+  cat("--------------------------------------------------------\n")
+  cat("--------------------------------------------------------\n")
+  cat("Nota:\n")
+  cat("X - categorias da variavel\n")
+  cat("fi - frequencia absoluta da classe\n")
+  cat("fr - frequencia relativa da classe\n")
+  cat("fp(%) - frequencia percentual da classe\n")
+  cat("FA - frequencia acumulada abaixo\n")
+  cat("FAp(%) - frequencia percentual acumulada abaixo\n")
+  cat("--------------------------------------------------------\n")
+
+  # Grafico de barras
+  if(graf)
+  {
+    lim <- max(Fi) * 1.2
+
+    coluna <- barplot(
+      Fi ~ Xi,
+      ylim = c(0, lim),
+      ylab = ylab,
+      xlab = xlab,
+      las = 1,
+      col = col
+    )
+
+    text(
+      coluna,
+      Fi,
+      labels = Fi,
+      pos = 3,
+      cex = 1
+    )
+
     abline(h = 0)
   }
 }

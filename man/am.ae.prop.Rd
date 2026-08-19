@@ -2,7 +2,10 @@
 \alias{am.ae.prop}
 \title{Amostragem estratificada proporcional
 }
-\description{De uma populacao de tamanho \eqn{N} dividida em \eqn{k} estratos, obtem-se o tamanho amostral a ser selecionado em cada estrato de acordo com o seu tamanho.}
+\description{Define o tamanho amostral \eqn{n_i} a ser selecionado proporcionalmente
+em cada estrato de tamanho \eqn{N_i} de uma populacao de tamanho
+ \eqn{N} dividida em \eqn{k} estratos.
+}
 \usage{
 am.ae.prop(k,n)
 }
@@ -30,8 +33,6 @@ Natalia da Silva Martins Fonseca,
 }
 \note{Ao executar o comando, uma janela sera aberta para que seja inserido o tamanho populacional de cada estrato, ou seja, o numero de elementos de cada estrato \eqn{N_i}. Apos preencher as informacoes e fechar a janela, o resultado do tamanho amostral \eqn{n_i} de cada estrato sera impresso na tela.
 }
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
 \code{\link{am.ae.ot}}, \code{\link{am.ae.unif}}, \code{\link{am.as.dados}},

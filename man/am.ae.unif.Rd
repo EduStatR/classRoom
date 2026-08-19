@@ -2,7 +2,11 @@
 \alias{am.ae.unif}
 
 \title{Amostragem estratificada uniforme}
-\description{Como o tamanho amostral dos estratos é igual ou aproximadamente igual, obtem-se o mesmo tamanho amostral para todos os estratos.
+\description{
+Define o tamanho amostral \eqn{n_i} a ser selecionado uniformemente
+em cada estrato de tamanho \eqn{N_i} de uma populacao de tamanho
+ \eqn{N} dividida em \eqn{k} estratos.
+
 }
 \usage{
 am.ae.unif(k,n)

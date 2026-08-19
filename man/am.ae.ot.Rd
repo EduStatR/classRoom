@@ -1,7 +1,10 @@
 \name{am.ae.ot}
 \alias{am.ae.ot}
 \title{Amostragem estratificada otima}
-\description{De uma populacao de tamanho \eqn{N} dividida em \eqn{k} estratos, obtem-se o tamanho amostral a ser selecionado em cada estrato de acordo com o seu tamanho e variabilidade.
+\description{Define o tamanho amostral \eqn{n_i} a ser selecionado
+em cada estrato de tamanho \eqn{N_i} de uma populacao de tamanho
+ \eqn{N} dividida em \eqn{k} estratos, considerando a variabilidade \eqn{s_i} de cada estrato.
+
 }
 \usage{
 am.ae.ot(k,n)

@@ -1,42 +1,61 @@
-freq.quali <- function(x, graf = TRUE) {
+freq.quali <- function(x, graf = FALSE)
+{
   if(!graf) graphics.off()
 
-  # Cria a tabela de frequências
+  # Tabela de frequencias
   d <- table(x)
-  df <- as.data.frame(d)  # Transforma o objeto table em data.frame
-  Fi <- df$Freq  # Armazena a frequência absoluta do data frame
+
+  # Frequencias absolutas
+  Fi <- as.numeric(d)
+
+  # Categorias
+  categorias <- names(d)
+
+  # Numero de observacoes
   n <- sum(Fi)
-  Fri <- Fi / n  # Calcula a frequência relativa
-  FA <- cumsum(Fi)  # Frequência acumulada absoluta
-  Fpi <- Fri * 100  # Calcula a frequência percentual
-  FAPi <- cumsum(Fpi)  # Frequência acumulada percentual
-  k <- length(d)
 
-  # Criando uma matriz para armazenar os resultados
-  tabela <- matrix(NA, nrow = k, ncol = 6)
+  # Frequencias relativas e percentuais
+  Fri <- Fi / n
+  Fpi <- Fri * 100
 
-  # Preenchendo a tabela com os dados
-  tabela[, 1] <- as.character(df$x)  # Converter as categorias para caracteres
-  tabela[, 2] <- Fi
-  tabela[, 3] <- round(Fri, 2)
-  tabela[, 4] <- round(Fpi, 2)
-  tabela[, 5] <- FA
-  tabela[, 6] <- round(FAPi, 2)
-  row.names(tabela)<-rep("",k)
-  # Definindo os nomes das colunas
-  colnames(tabela) <- c("X", "fi", "fr", "fp", "FA", "FAp")
+  # Saida
+  cat("\nDistribuição de frequências\n")
+  cat("--------------------------------------------\n")
 
-  # Imprimir a tabela de forma adequada, sem nomes de linhas
-  cat("\n   Distribuicao de frequencias\n")
-  cat("----------------------------------\n")
-  print(tabela, row.names = FALSE, quote = FALSE)  # Evitar aspas na impressão
-  cat("-----------------------------------\n")
+  cat(sprintf("%-15s %8s %8s %10s\n",
+              "Categoria", "fi", "fr", "fp(%)"))
 
-  # Opcional: gerar gráfico
-  if (graf) {
+  cat("--------------------------------------------\n")
+
+  for(i in seq_along(categorias))
+  {
+    cat(sprintf("%-15s %8d %8.2f %10.2f\n",
+                categorias[i],
+                Fi[i],
+                Fri[i],
+                Fpi[i]))
+  }
+
+  cat("---------------------------------------------\n")
+
+  # Total
+  cat(sprintf("%-15s %8d %8.2f %10.2f\n",
+              "Total",
+              sum(Fi),
+              sum(Fri),
+              sum(Fpi)))
+
+  cat("---------------------------------------------\n")
+  cat("---------------------------------------------\n")
+  cat("Nota:\n")
+  cat("fi - frequencia absoluta da classe\n")
+  cat("fr - frequencia relativa da classe\n")
+  cat("fp(%) - frequencia percentual da classe\n")
+  cat("---------------------------------------------\n")
+
+  # Grafico de setores
+  if(graf)
+  {
     graf.pizza(x)
   }
 }
-
-
-

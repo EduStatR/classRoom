@@ -1,8 +1,9 @@
 \name{am.asa.dados}
 \alias{am.asa.dados}
-\title{Amostragem simples ao acaso com acesso ao banco de dados}
-\description{De um banco de dados de tamanho \eqn{N} sao sorteados \eqn{n} elementos para compor a amostra
-}
+\title{Amostragem simples ao acaso em banco de dados}
+\description{Sorteia \eqn{n} elementos de um banco de dados de tamanho
+\eqn{N} para compor a amostra, exibindo, tambem, os valores/observacoes da variavel de interesse.}
+
 \usage{
 am.asa.dados(x,n,replace=FALSE,sort=FALSE)
 }

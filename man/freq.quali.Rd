@@ -6,7 +6,8 @@
 Confecciona a tabela de distribuicao de frequencias e o gráfico de setores (pizza)
 }
 \usage{
-freq.quali(x,graf=FALSE)
+freq.quali(x,
+           graf=FALSE)
 }
 \arguments{
   \item{x}{nome da variavel ou da coluna do banco de dados que identifica a variavel.}
@@ -41,7 +42,21 @@ Natalia da Silva Martins Fonseca,
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+\code{\link{freq.cont}},
+\code{\link{freq.disc}},
+\code{\link{freq.dupla}},
+\code{\link{graf.bastao}},
+\code{\link{graf.box}},
+\code{\link{graf.col}},
+\code{\link{graf.col2}},
+\code{\link{graf.diag}},
+\code{\link{graf.hist}},
+\code{\link{graf.linha}},
+\code{\link{graf.linhas}},
+\code{\link{graf.pic}},
+\code{\link{graf.pizza}},
+\code{\link{graf.pontos}},
+\code{\link{graf.ramo}}
 }
 \examples{
 data(banco)

@@ -1,7 +1,7 @@
 Package: classRoom
 Type: Package
 Title: classRoom: Ferramentas Didaticas para Estatistica Básica
-Version: 1.0.0
+Version: 1.0.1
 Author: Adriana Dias, Denismar Alves Nogueira, Flavio Bittencourt, Natália da Silva Martins Fonseca
 Maintainer: Flavio Bittencourt <flavio.bittencourt@unifal-mg.edu.br>
 Description: O 'classRoom' e um pacote desenvolvido para apoiar o ensino e a aprendizagem de estatistica basica. Reune funcoes didaticas para organizacao e descricao de dados, construcao de graficos, distribuicoes de probabilidade, intervalos de confianca, testes de hipoteses, correlacao, regressao linear e analise de variancia. Seu objetivo e auxiliar professores e estudantes a concentrarem seus esforcos na interpretacao dos resultados e na compreensao dos conceitos estatisticos, reduzindo a necessidade de programacao.
@@ -16,4 +16,3 @@ URL: https://github.com/EduStatR/classRoom, https://pensaracademico.unifacig.edu
 BugReports: https://github.com/EduStatR/classRoom/issues
 Roxygen: list(markdown = TRUE)
 Config/roxygen2/version: 8.1.0
-RoxygenNote: 7.3.1

@@ -1,7 +1,7 @@
 \name{am.asa}
 \alias{am.asa}
 \title{Amostragem simples ao acaso}
-\description{De uma populacao de tamanho \eqn{N} sao sorteados \eqn{n} elementos para compor a amostra.}
+\description{Sorteia \eqn{n} elementos de uma populacao de tamanho \eqn{N} para compor a amostra.}
 \usage{
 am.asa(N,n,replace=FALSE,sort=FALSE)
 }

@@ -4,7 +4,7 @@
 \title{
 Probabilidade de duas areas nas pontas da cauda de uma variavel normal, \eqn{P(X < a) + P(X > b)}
 }
-\description{
+\description{Apresenta a probabilidade de ocorrer valores nos extremos da curva e o grafico da funcao densidade de probabilidade.
 }
 \usage{
 prob.normal.extremos(a,b,mean,sigma)

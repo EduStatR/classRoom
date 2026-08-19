@@ -12,7 +12,7 @@ graf.bastao(x,
             ylab="Titulo do eixo-y",
             col="blue")
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
 \item{x}{nome da variavel ou da coluna do banco de dados que identifica a variavel}
   \item{xlab}{nomeia a variavel apresentada no eixo horizontal.}
@@ -52,7 +52,14 @@ Natalia da Silva Martins Fonseca,
 \examples{
 data(banco)
 attach(banco)
-graf.bastao(idadeMM,col="red",xlab="Idade em anos completos",ylab="Número de alunos")
-graf.bastao(exerMM,col="red",xlab="Horas completas de exercício físico por semana",ylab="Número de alunos")
+graf.bastao(idadeMM,
+            xlab="Idade em anos completos",
+            ylab="Numero de alunos",
+            col="red")
+
+graf.bastao(exerMM,
+            xlab="Horas completas de exercicio fisico por semana",
+            ylab="Numero de alunos",
+            col="blue")
 
 }

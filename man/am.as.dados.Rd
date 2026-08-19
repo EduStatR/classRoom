@@ -1,8 +1,10 @@
 \name{am.as.dados}
 \alias{am.as.dados}
-\title{Amostragem sistematica com acesso ao banco de dados
+\title{Amostragem sistematica em banco de dados
 }
-\description{De um banco de dados de tamanho \eqn{N} sao sorteados de forma sistematica \eqn{n} elementos para compor a amostra.}
+\description{Sorteia \eqn{n} elementos de um banco de dados de tamanho
+\eqn{N} para compor a amostra segundo o primeiro elemento e o intervalo de amostragem exibindo, tambem, os valores/observacoes da variavel de interesse.}
+
 \usage{
 am.as.dados(x,n)
 }

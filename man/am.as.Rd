@@ -2,7 +2,7 @@
 \alias{am.as}
 \title{Amostragem sistematica
 }
-\description{De uma populacao de tamanho \eqn{N} sao sorteados de forma sistematica \eqn{n} elementos para compor a amostra.
+\description{Sorteia \eqn{n} elementos de uma populacao de tamanho \eqn{N} para compor a amostra segundo o primeiro elemento e o intervalo de amostragem.
 }
 \usage{
 am.as(N,n)
